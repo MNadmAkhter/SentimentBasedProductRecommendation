@@ -26,6 +26,7 @@ def prediction():
         print(f"retrieving items....{len(items)}")
         print(items)
         # data=[items.to_html(classes="table-striped table-hover", header="true",index=False)
+       
         return render_template("index.html", column_names=items.columns.values, row_data=list(items.values.tolist()), zip=zip)
     else:
         return render_template("index.html", message="User Name doesn't exists, No product recommendations at this point of time!")
