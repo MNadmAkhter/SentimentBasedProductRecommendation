@@ -1,1 +1,8 @@
 gunicorn
+Flask
+nltk
+numpy
+pandas
+gunicorn
+scikit-learn
+xgboost
